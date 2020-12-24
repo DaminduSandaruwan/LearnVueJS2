@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>Conditionals</h1>
+        <button v-on:click="error=!error">Toggle Error</button>
+        <button v-on:click="success=!success">Toggle Success</button>
+        <p v-if="error">There has been an error</p>
+        <p v-else-if="success">success</p>
+        <p v-show="error">There has been an error</p>
+        <p v-show="success">success</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js Learn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>{{greet('Afternoon')}}</h1>
+        <p>Name : {{name}}</p>
+        <p>Job : {{job}}</p>
+        <a v-bind:href="website">Github</a> <br>
+        <!-- use v-bind to binding some value -->
+        <input type="text" v-bind:value="name">
+
+        <p v-html="websiteTag"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

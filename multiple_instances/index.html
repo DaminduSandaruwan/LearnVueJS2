@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Vue Instances</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+  <h1>Multiple Vue Instances</h1>
+    <div id="vue-app-one">
+      <h2>{{title}}</h2>
+      <p>{{greet}}</p>
+    </div>
+    <div id="vue-app-two">
+      <h2>{{title}}</h2>
+      <p>{{greet}}</p>
+      <button v-on:click="changeTitle">Change App One Title</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

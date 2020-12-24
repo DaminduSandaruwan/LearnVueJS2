@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>Keyboard Events</h1>
+        <label for="name">Name :</label>
+        <!-- <input type="text" v-on:keyup.enter="logName"> -->
+        <input type="text" v-model="name">
+        <span>{{name}}</span>
+        <label for="Age">Age :</label>
+        <!-- <input type="text" v-on:keyup.enter="logAge"> -->
+        <input type="text" v-model="age">
+        <span>{{age}}</span>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

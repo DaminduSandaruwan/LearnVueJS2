@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+      <h1>Looping</h1>
+      <ul>
+          <li v-for="(character,index) in characters">{{character}}</li>
+      </ul>
+      <ul>
+          <li v-for="(ninja,index) in ninjas">{{index}}.{{ninja.name}} - {{ninja.age}}</li>
+      </ul>
+
+      <template v-for="(ninja,index) in ninjas">
+        <h3>{{index}}.{{ninja.name}}</h3>
+        <p>{{ninja.age}}</p>
+      </template>
+
+      <template v-for="ninja in ninjas">
+        <div v-for="(val,key) in ninja">
+            <p>{{key}} - {{val}}</p>
+        </div>
+      </template>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
